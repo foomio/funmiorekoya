@@ -1,38 +1,58 @@
-.App {
+@font-face {
+  font-family: 'SegaArcadeFont-Regular';
+  src: url('SegaArcadeFont-Regular.ttf') format('truetype');
+  /* Add more font formats if needed for cross-browser compatibility */
+}
+
+@keyframes floatAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+body {
+  font-family: 'SegaArcadeFont-Regular', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #000000; /* Change to a darker color, like black */
+}
+
+header {
+  background-color: #1D2E28;
+  color: #000000;
   text-align: center;
+  padding: 20px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header img {
+  border-radius: 50%;
+  max-width: 150px; /* Adjust the size as needed */
+  height: auto;
+  margin-bottom: 10px;
+ /* float: right;  Float the image to the right */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  a {
+  animation: floatAnimation 2s infinite; /* Adjust the animation duration as needed */
+  float: left; /* or right */
+  margin-right: 20px; /* Adjust the margin as needed */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  background-color: #F0EAD6;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
 }

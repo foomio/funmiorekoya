@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import './App.css'; // Link to your App.css file
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app">
+      <header>
+       
+        <h1>Projects</h1>
+        <p>Unreal Game Engine Showcase.</p>
       </header>
+
+      <main>
+        <section>
+          <h2>Demos</h2>
+          
+        </section>
+      
+
+        <section>
+          <h2>Thank you!</h2>
+         
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2023 Funmi Orekoya | Privacy Policy</p>
+      </footer>
     </div>
   );
 }
