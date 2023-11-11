@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import SoundClick from './SoundClick';
+
 
 function App() {
   return (
